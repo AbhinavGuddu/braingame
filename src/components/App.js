@@ -1,11 +1,12 @@
-import React, {Component, useState} from "react";
-import '../styles/App.css';
+import Cards from './components/Cards'
 
-const App = () => {
+function App() {
   return (
-    <div id="main"></div>
-  )
+    <div className="App">
+      <h1>Memory Game - React</h1>
+      <Cards />
+    </div>
+  );
 }
-
 
 export default App;
