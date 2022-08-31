@@ -6,30 +6,36 @@ html, body{
   height: 100%;
 }
 body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  background-color:black;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Toy{
+  color: white;
+  font-size: 82px;
 }
 
 h1{
   text-align: center;
   margin-bottom: 1em;
   color: white;
-  float:top;
+  font-size: 40px;
 }
 .container{
-  height: 700px;
-  width: 700px;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  gap: 1em;
+  gap: 0.2em;
 }
 
 .card{
-  background-color: #fff;
+  background-color: blueviolet;
+  height: 90px;
+  width: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,4 +79,9 @@ h1{
 }
 .card.active img{
   transform: scale(1);
+}
+@media only screen and (max-width: 500px) {
+  .cards {
+    max-width: 100px;
+  }
 }
